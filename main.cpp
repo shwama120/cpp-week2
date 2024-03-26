@@ -9,9 +9,6 @@ int main() {
 
     answer = util(answer); 
 
-    std::cout << "Answer is " << answer << std::endl; 
-    
-
     int answerDigit1 = answer / 100; 
     int answerDigit2 = (answer / 10) % 10; 
     int answerDigit3 = answer % 10; 
@@ -32,16 +29,21 @@ int main() {
         int balls = countBalls(guessDigit1, guessDigit2, guessDigit3, answerDigit1, answerDigit2, answerDigit3); 
 
 
+        chance--; 
+
+        
+
          if(strikes == 3) { 
 
-            std::cout << "You win!" << std::endl; 
-
+            std::cout << "You win!" << std::endl;
+        
             break; 
-
-
          }
 
+       
+
          std::cout << "Strikes: " << strikes << ", Balls: " << balls << std::endl; 
+         
 
 
 
