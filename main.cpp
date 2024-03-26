@@ -29,7 +29,7 @@ int main() {
         int balls = countBalls(guessDigit1, guessDigit2, guessDigit3, answerDigit1, answerDigit2, answerDigit3); 
 
 
-        chance--; 
+        
 
         
 
