@@ -16,6 +16,11 @@ int main() {
 
     noDuplication(answerDigit1, answerDigit2, answerDigit3); 
 
+    int chance = 5; 
+
+    std::cout << chance << " chances left." << std::endl;
+
+
     while(true) {
 
         int guess; 
@@ -32,7 +37,7 @@ int main() {
         int balls = countBalls(guessDigit1, guessDigit2, guessDigit3, answerDigit1, answerDigit2, answerDigit3); 
 
 
-        
+        chance--; 
 
         
 
@@ -43,10 +48,18 @@ int main() {
             break; 
          }
 
+
+         else if(chance == 0) {
+
+            std::cout << "you Lose!" << std::endl; 
+            break; 
+         }
+
+
        
 
          std::cout << "Strikes: " << strikes << ", Balls: " << balls << std::endl; 
-         
+         std::cout << chance << " chances left." << std::endl;
 
 
 
