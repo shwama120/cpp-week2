@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <random> 
 
 int countStrikes(int guessDigit1, int guessDigit2, int guessDigit3, int answerDigit1, int answerDigit2, int answerDigit3) {
  int strikes = 0; 

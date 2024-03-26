@@ -1,14 +1,16 @@
 #include <iostream> 
 int countStrikes(int guessDigit1, int guessDigit2, int guessDigit3, int answerDigit1, int answerDigit2, int answerDigit3); 
 int countBalls(int guessDigit1, int guessDigit2, int guessDigit3, int answerDigit1, int answerDigit2, int answerDigit3); 
-void util(); 
+int util(int anser);  
 
 int main() {
 
-    int answer; 
+    int answer = 0;
 
-    std::cout << "Enter a answer: "; 
-    std::cin >> answer; 
+    answer = util(answer); 
+
+    std::cout << "Answer is " << answer << std::endl; 
+    
 
     int answerDigit1 = answer / 100; 
     int answerDigit2 = (answer / 10) % 10; 
