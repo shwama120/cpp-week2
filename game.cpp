@@ -30,3 +30,13 @@ if (guessDigit1 == answerDigit2 || guessDigit1 == answerDigit3)
         return balls; 
 
 }
+
+void noDuplication(int answerDigit1, int answerDigit2, int answerDigit3) {
+
+   if(answerDigit1 == answerDigit2) 
+   answerDigit1 += 1;  
+   if(answerDigit2 == answerDigit3) 
+   answerDigit2 += 1; 
+   if(answerDigit3 == answerDigit1)
+   answerDigit3 += 1; 
+}
